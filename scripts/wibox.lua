@@ -58,10 +58,10 @@ return function(app)
         -- Layout box
         layout_box[s] = awful.widget.layoutbox(s)
         layout_box[s]:buttons(awful.util.table.join(
-            awful.button({ }, 1, function () awful.layout.inc(layouts, 1) end),
-            awful.button({ }, 3, function () awful.layout.inc(layouts, -1) end),
-            awful.button({ }, 4, function () awful.layout.inc(layouts, 1) end),
-            awful.button({ }, 5, function () awful.layout.inc(layouts, -1) end)
+            awful.button({ }, 1, function () awful.layout.inc(1) end),
+            awful.button({ }, 3, function () awful.layout.inc(-1) end),
+            awful.button({ }, 4, function () awful.layout.inc(1) end),
+            awful.button({ }, 5, function () awful.layout.inc(-1) end)
         ))
 
         -- Tag box
@@ -73,7 +73,7 @@ return function(app)
         -- Task bar
         task_bar[s] = awful.wibox({
             position = "bottom",
-            height = 26.9,
+            height = 26,
             screen = s
         })
 
@@ -85,8 +85,8 @@ return function(app)
 
         -- Right widgets
         local right = wibox.layout.fixed.horizontal()
-        right:add(memory)
-        right:add(cpu)
+        -- right:add(memory)
+        -- right:add(cpu)
         if s == 1 then right:add(wibox.widget.systray()) end
         right:add(clock)
         right:add(layout_box[s])

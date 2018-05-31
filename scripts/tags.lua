@@ -9,9 +9,9 @@ local function load_tags(app)
         "➎",
     }
 
-    local tag_list = {}
+    app.tag_list = {}
     for s = 1, screen.count() do
-        tag_list[s] = awful.tag(tags, s, layouts[1])
+        app.tag_list[s] = awful.tag(tags, s, layouts[1])
     end
 end
 

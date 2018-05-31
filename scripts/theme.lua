@@ -30,12 +30,12 @@ local theme = {}
 theme.wallpaper = assets_directory .. "/background.jpg"
 
 -- Font
-theme.font = "mononoki 12"
+theme.font = "Segoe UI 12"
 
-theme.bg_normal = "#222222"
-theme.bg_focus = "#111111"
-theme.bg_urgent = "#d02e54"
-theme.bg_minimize = "#444444"
+theme.bg_normal = "#1e1e1e"
+theme.bg_focus = "#101010"
+theme.bg_urgent = "#FFD000"
+theme.bg_minimize = "#2e2e2e"
 
 theme.fg_normal = "#ffffff"
 theme.fg_focus = "#ffffff"
@@ -43,7 +43,7 @@ theme.fg_urgent = "#ffffff"
 theme.fg_minimize = "#ffffff"
 
 theme.border_width = "0"
-theme.border_normal = "#747474"
+theme.border_normal = "#000000"
 theme.border_focus = "#535d6c"
 theme.border_marked = "#91231c"
 

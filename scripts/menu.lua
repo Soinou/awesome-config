@@ -6,9 +6,8 @@ local function menu(app)
 
     -- Menu items
     local menu_items = {
-        { "Opera", "opera-beta" },
-        { "Visual Studio Code", "code --disable-gpu" },
-        { "Sakura", "sakura" },
+        { "Visual Studio Code", "code" },
+        { "Terminal", app.terminal },
         { "Restart awesome", awesome.restart },
         { "Quit awesome", awesome.quit },
         { "Reboot", "sakura -e reboot" },

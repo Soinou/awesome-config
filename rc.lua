@@ -8,6 +8,7 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local vicious = require("vicious")
+local lain = require("lain")
 
 -- App
 local app = {
@@ -15,10 +16,11 @@ local app = {
     awful = awful,
     beautiful = beautiful,
     gears = gears,
+    lain = lain,
     menubar = menubar,
     naughty = naughty,
-    wibox = wibox,
     vicious = vicious,
+    wibox = wibox,
 }
 
 -- Home directory
@@ -42,12 +44,14 @@ local load_keys = require("scripts.keys")
 local load_menu = require("scripts.menu")
 local load_mouse = require("scripts.mouse")
 local load_tags = require("scripts.tags")
+local load_rules = require("scripts.rules")
 local load_task_bar = require("scripts.wibox")
 
 -- Load scripts
 load_errors(app)
 load_config(app)
 load_tags(app)
+load_rules(app)
 load_menu(app)
 load_task_bar(app)
 load_mouse(app)

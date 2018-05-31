@@ -10,6 +10,8 @@ local function config(app)
         awful.layout.suit.tile,
         awful.layout.suit.max.fullscreen
     }
+
+    awful.layout.layouts = app.layouts
 end
 
 return config

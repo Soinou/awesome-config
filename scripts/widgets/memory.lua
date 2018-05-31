@@ -1,4 +1,4 @@
-local function cpu(app)
+local function memory(app)
     local awful = app.awful
     local vicious = app.vicious
     local wibox = app.wibox
@@ -12,4 +12,4 @@ local function cpu(app)
     return memwidget
 end
 
-return cpu
+return memory
