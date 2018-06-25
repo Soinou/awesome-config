@@ -40,6 +40,7 @@ return function(app)
         awful.key({ modkey,           }, "v",      function () awful.util.spawn("code")   end),
         awful.key({ modkey, "Control" }, "r", awesome.restart),
         awful.key({ modkey, "Shift"   }, "q", awesome.quit),
+        awful.key({ modkey, "Shift"   }, "s", function () awful.util.spawn("shutdown 0")  end),
 
         awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
         awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
