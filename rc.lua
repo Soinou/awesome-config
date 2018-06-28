@@ -7,7 +7,6 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
-local vicious = require("vicious")
 local lain = require("lain")
 
 -- App
@@ -19,7 +18,6 @@ local app = {
     lain = lain,
     menubar = menubar,
     naughty = naughty,
-    vicious = vicious,
     wibox = wibox,
 }
 

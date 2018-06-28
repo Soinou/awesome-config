@@ -1,7 +1,7 @@
 local function load_rules(app)
     local awful = app.awful
     local beautiful = app.beautiful
-    local buttons = app.clientbuttons
+    local clientbuttons = app.clientbuttons
     local clientkeys = app.clientkeys
     local tag_list = app.tag_list
 
@@ -16,7 +16,8 @@ local function load_rules(app)
                 raise = true,
                 keys = clientkeys,
                 buttons = clientbuttons,
-                size_hints_honor = false
+                screen = awful.screen.preferred,
+                placement = awful.placement.no_overlap+awful.placement.no_offscreen
             }
         },
         {

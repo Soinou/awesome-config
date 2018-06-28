@@ -40,10 +40,8 @@ return function(app)
 
     -- Widgets
     local clock = load_widget(app, "clock")
-    local cpu = load_widget(app, "cpu")
     local tags = load_widget(app, "tags")
     local tasks = load_widget(app, "tasks")
-    local memory = load_widget(app, "memory")
 
     -- Boxes
     local layout_box = {}
@@ -85,8 +83,6 @@ return function(app)
 
         -- Right widgets
         local right = wibox.layout.fixed.horizontal()
-        -- right:add(memory)
-        -- right:add(cpu)
         if s == 1 then right:add(wibox.widget.systray()) end
         right:add(clock)
         right:add(layout_box[s])

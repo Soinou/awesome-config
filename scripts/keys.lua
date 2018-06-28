@@ -37,7 +37,7 @@ return function(app)
 
         -- Standard program
         awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
-        awful.key({ modkey,           }, "v",      function () awful.util.spawn("code")   end),
+        awful.key({ modkey,           }, "v",      function () awful.util.spawn("code -p")   end),
         awful.key({ modkey, "Control" }, "r", awesome.restart),
         awful.key({ modkey, "Shift"   }, "q", awesome.quit),
         awful.key({ modkey, "Shift"   }, "s", function () awful.util.spawn("shutdown 0")  end),
